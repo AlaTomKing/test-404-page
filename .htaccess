@@ -1,1 +1,5 @@
-ErrorDocument 404 /.404.html
+#ErrorDocument 404 /.404.html
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^alatomking\.github\.io/test-404-page$
+RewriteRule ^/? / [R=301,L]
